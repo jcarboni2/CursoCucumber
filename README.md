@@ -1,7 +1,7 @@
 # Curso Cucumber
 
 Este repositório foi criado baseado nas aulas do curso do Wagner Arquino: Aprenda BDD com Cucumber em JAVA.
-    .
+
 
 ## Iniciando
 
