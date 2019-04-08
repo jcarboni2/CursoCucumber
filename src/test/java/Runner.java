@@ -6,7 +6,14 @@ import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = "pretty", monochrome = true, snippets = SnippetType.CAMELCASE, dryRun = false, strict = false)
+@CucumberOptions(
+		features = {"src/test/java"},
+		plugin = "pretty", 
+		monochrome = true, 
+		snippets = SnippetType.CAMELCASE, 
+		dryRun = false,
+		strict = false
+		)
 public class Runner {
 
 }
