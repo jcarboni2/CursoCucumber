@@ -10,13 +10,13 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "src/test/resources/features",
 		glue = "br.ce.jhenck.steps",
-		tags = "~@ignore",
-		plugin = "pretty", 
+		tags = "@locEsqCenarioDataTable",
+		plugin = {"pretty", "html:target/report-html", "json:target/report-json"},
 		monochrome = true, 
 		snippets = SnippetType.CAMELCASE, 
 		dryRun = false,
 		strict = false
 		)
-public class Runner {
+public class RunnerTest {
 
 }

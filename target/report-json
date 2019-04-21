@@ -1,0 +1,676 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Deve alugar um filme com sucesso",
+        "description": "",
+        "id": "locadora-com-esquema-de-cenário-e-data-table;deve-alugar-um-filme-com-sucesso",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 197422900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "filme",
+            "match": {
+              "location": "EsqCenarioDataTable.filme(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "estoque",
+                  "2"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "preco",
+                  "3"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "tipo",
+                  "comum"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1795200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "alugar este",
+            "match": {
+              "location": "EsqCenarioDataTable.alugar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 4590200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "preço do aluguel será R$ 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 25
+                }
+              ],
+              "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 1120900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "data de entrega será em 1 dia",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 24
+                }
+              ],
+              "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 117400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "estoque do filme será 1 unidade",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 22
+                }
+              ],
+              "location": "EsqCenarioDataTable.oEstoqueDoFilmeSeráDeUnidade(int)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@dataTable"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Não deve alugar filme sem estoque",
+        "description": "",
+        "id": "locadora-com-esquema-de-cenário-e-data-table;não-deve-alugar-filme-sem-estoque",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 105300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "filme com estoque de 0 unidades",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 21
+                }
+              ],
+              "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 89200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "alugar este",
+            "match": {
+              "location": "EsqCenarioDataTable.alugar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 47600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "não será possivel pela falta de estoque",
+            "match": {
+              "location": "EsqCenarioDataTable.nãoSeráPossivelPorFaltaDeEstoque()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 93900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "estoque do filme será 0 unidade",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 22
+                }
+              ],
+              "location": "EsqCenarioDataTable.oEstoqueDoFilmeSeráDeUnidade(int)"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "Deve dar condições conforme tipo de aluguel",
+        "description": "",
+        "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 147900,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "filme com estoque de 2 unidades",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 21
+                }
+              ],
+              "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 112500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "o preço do aluguel seja R$ 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 27
+                }
+              ],
+              "location": "EsqCenarioDataTable.queOPreçoDoAluguelSejaDeR$(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 157300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "o tipo do aluguel seja extendido",
+            "match": {
+              "arguments": [
+                {
+                  "val": "extendido",
+                  "offset": 23
+                }
+              ],
+              "location": "EsqCenarioDataTable.queOTipoDoAluguelSejaExtendido(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 100100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "alugar este",
+            "match": {
+              "location": "EsqCenarioDataTable.alugar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 97100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "preço do aluguel será R$ 8",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 25
+                }
+              ],
+              "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 671900,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "data de entrega será em 3 dias",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 24
+                }
+              ],
+              "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 107000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "pontuação recebida será de 2 pontos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 27
+                }
+              ],
+              "location": "EsqCenarioDataTable.aPontuaçãoRecebidaSeráDePontos(int)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@locEsqCenarioDataTable"
+          },
+          {
+            "line": 26,
+            "name": "@esqCenario"
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "Deve dar condições conforme tipo de aluguel",
+        "description": "",
+        "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;;3",
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 146300,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "filme com estoque de 2 unidades",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 21
+                }
+              ],
+              "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 100900,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "o preço do aluguel seja R$ 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 27
+                }
+              ],
+              "location": "EsqCenarioDataTable.queOPreçoDoAluguelSejaDeR$(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 79400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "o tipo do aluguel seja comum",
+            "match": {
+              "arguments": [
+                {
+                  "val": "comum",
+                  "offset": 23
+                }
+              ],
+              "location": "EsqCenarioDataTable.queOTipoDoAluguelSejaExtendido(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 132000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "alugar este",
+            "match": {
+              "location": "EsqCenarioDataTable.alugar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 256600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "preço do aluguel será R$ 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 25
+                }
+              ],
+              "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 776100,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "data de entrega será em 1 dias",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 24
+                }
+              ],
+              "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 330400,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "pontuação recebida será de 1 pontos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 27
+                }
+              ],
+              "location": "EsqCenarioDataTable.aPontuaçãoRecebidaSeráDePontos(int)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@locEsqCenarioDataTable"
+          },
+          {
+            "line": 26,
+            "name": "@esqCenario"
+          }
+        ]
+      },
+      {
+        "line": 39,
+        "name": "Deve dar condições conforme tipo de aluguel",
+        "description": "",
+        "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;;4",
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 220300,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "filme com estoque de 2 unidades",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 21
+                }
+              ],
+              "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 178700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "o preço do aluguel seja R$ 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 27
+                }
+              ],
+              "location": "EsqCenarioDataTable.queOPreçoDoAluguelSejaDeR$(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 79700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "o tipo do aluguel seja semanal",
+            "match": {
+              "arguments": [
+                {
+                  "val": "semanal",
+                  "offset": 23
+                }
+              ],
+              "location": "EsqCenarioDataTable.queOTipoDoAluguelSejaExtendido(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 97700,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "alugar este",
+            "match": {
+              "location": "EsqCenarioDataTable.alugar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 100800,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "preço do aluguel será R$ 15",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15",
+                  "offset": 25
+                }
+              ],
+              "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 465800,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "data de entrega será em 7 dias",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 24
+                }
+              ],
+              "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 90700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "pontuação recebida será de 3 pontos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 27
+                }
+              ],
+              "location": "EsqCenarioDataTable.aPontuaçãoRecebidaSeráDePontos(int)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@locEsqCenarioDataTable"
+          },
+          {
+            "line": 26,
+            "name": "@esqCenario"
+          }
+        ]
+      }
+    ],
+    "name": "Locadora com esquema de cenário e data table",
+    "description": "Como um usuário\r\nEu quero cadastrar aluguéis de filmes\r\nPara controlar preços e datas de entrega",
+    "id": "locadora-com-esquema-de-cenário-e-data-table",
+    "keyword": "Funcionalidade",
+    "uri": "esq_cenario_data_table.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@locEsqCenarioDataTable"
+      }
+    ]
+  }
+]
