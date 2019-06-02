@@ -1,12 +1,12 @@
 #language: pt
 
-@locEsqCenarioDataTable
+@unitarios @loc_esqcenario_dt
 Funcionalidade: Locadora com esquema de cenário e data table
 	Como um usuário
 	Eu quero cadastrar aluguéis de filmes
 	Para controlar preços e datas de entrega
 	
-	@dataTable
+	@data_table
 	Cenário: Deve alugar um filme com sucesso
 		Dado filme
 		|estoque |2 		|
@@ -23,7 +23,7 @@ Funcionalidade: Locadora com esquema de cenário e data table
 		Então não será possivel pela falta de estoque
 		E estoque do filme será 0 unidade
 	
-	@esqCenario	
+	@esq_cenario	
 	Esquema do Cenário: Deve dar condições conforme tipo de aluguel
 		Dado filme com estoque de 2 unidades
 		E o preço do aluguel seja R$ <preco>

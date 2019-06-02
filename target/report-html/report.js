@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("esq_cenario_data_table.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("inserir_conta_cenario_declarativo.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,759 +7,582 @@ formatter.feature({
     }
   ],
   "line": 4,
-  "name": "Locadora com esquema de cenário e data table",
-  "description": "Como um usuário\r\nEu quero cadastrar aluguéis de filmes\r\nPara controlar preços e datas de entrega",
-  "id": "locadora-com-esquema-de-cenário-e-data-table",
+  "name": "Cadastro de contas",
+  "description": "Como um usuário \nGostaria de cadastrar contas\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
+  "id": "cadastro-de-contas",
   "keyword": "Funcionalidade",
   "tags": [
     {
       "line": 3,
-      "name": "@locEsqCenarioDataTable"
+      "name": "@funcionais"
+    },
+    {
+      "line": 3,
+      "name": "@inserir_conta_declarativo"
     }
   ]
 });
-formatter.scenario({
-  "line": 10,
-  "name": "Deve alugar um filme com sucesso",
+formatter.background({
+  "line": 9,
+  "name": "",
   "description": "",
-  "id": "locadora-com-esquema-de-cenário-e-data-table;deve-alugar-um-filme-com-sucesso",
-  "type": "scenario",
-  "keyword": "Cenário",
-  "tags": [
-    {
-      "line": 9,
-      "name": "@dataTable"
-    }
-  ]
+  "type": "background",
+  "keyword": "Contexto"
 });
 formatter.step({
-  "line": 11,
-  "name": "filme",
-  "rows": [
-    {
-      "cells": [
-        "estoque",
-        "2"
-      ],
-      "line": 12
-    },
-    {
-      "cells": [
-        "preco",
-        "3"
-      ],
-      "line": 13
-    },
-    {
-      "cells": [
-        "tipo",
-        "comum"
-      ],
-      "line": 14
-    }
-  ],
+  "line": 10,
+  "name": "que desejo adicionar uma conta",
   "keyword": "Dado "
 });
-formatter.step({
-  "line": 15,
-  "name": "alugar este",
-  "keyword": "Quando "
+formatter.match({
+  "location": "InserirContasStepsCenarioDeclarativo.queDesejoAdicionarUmaConta()"
+});
+formatter.result({
+  "duration": 9243476600,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 12,
+  "name": "Deve inserir uma conta com sucesso",
+  "description": "",
+  "id": "cadastro-de-contas;deve-inserir-uma-conta-com-sucesso",
+  "type": "scenario",
+  "keyword": "Cenário"
 });
 formatter.step({
-  "line": 16,
-  "name": "preço do aluguel será R$ 3",
+  "line": 13,
+  "name": "adiciono a conta \"Conta de Teste\"",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 14,
+  "name": "a conta inserida com sucesso",
   "keyword": "Então "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Conta de Teste",
+      "offset": 18
+    }
+  ],
+  "location": "InserirContasStepsCenarioDeclarativo.adicionoAConta(String)"
+});
+formatter.result({
+  "duration": 1085901900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "InserirContasStepsCenarioDeclarativo.aContaInseridaComSucesso()"
+});
+formatter.result({
+  "duration": 106712200,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 436810600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 4938697000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 965054100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 848524100,
+  "status": "passed"
+});
+formatter.background({
+  "line": 9,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 10,
+  "name": "que desejo adicionar uma conta",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "InserirContasStepsCenarioDeclarativo.queDesejoAdicionarUmaConta()"
+});
+formatter.result({
+  "duration": 7949888400,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 16,
+  "name": "Não deve inserir uma conta sem nome",
+  "description": "",
+  "id": "cadastro-de-contas;não-deve-inserir-uma-conta-sem-nome",
+  "type": "scenario",
+  "keyword": "Cenário"
 });
 formatter.step({
   "line": 17,
-  "name": "data de entrega será em 1 dia",
+  "name": "adiciono a conta \"\"",
   "keyword": "E "
 });
 formatter.step({
   "line": 18,
-  "name": "estoque do filme será 1 unidade",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "EsqCenarioDataTable.filme(DataTable)"
-});
-formatter.result({
-  "duration": 197422900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "EsqCenarioDataTable.alugar()"
-});
-formatter.result({
-  "duration": 1795200,
-  "status": "passed"
+  "name": "sou notificado que nome da conta é obrigatório",
+  "keyword": "Então "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "3",
-      "offset": 25
+      "val": "",
+      "offset": 18
     }
   ],
-  "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
+  "location": "InserirContasStepsCenarioDeclarativo.adicionoAConta(String)"
 });
 formatter.result({
-  "duration": 4590200,
+  "duration": 613885900,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 24
-    }
-  ],
-  "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
+  "location": "InserirContasStepsCenarioDeclarativo.souNotificadoQueNomeDaContaÉObrigatório()"
 });
 formatter.result({
-  "duration": 1120900,
+  "duration": 114600300,
   "status": "passed"
 });
+formatter.after({
+  "duration": 418224600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 4669751000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 889400300,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 853504300,
+  "status": "passed"
+});
+formatter.background({
+  "line": 9,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 10,
+  "name": "que desejo adicionar uma conta",
+  "keyword": "Dado "
+});
 formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 22
-    }
-  ],
-  "location": "EsqCenarioDataTable.oEstoqueDoFilmeSeráDeUnidade(int)"
+  "location": "InserirContasStepsCenarioDeclarativo.queDesejoAdicionarUmaConta()"
 });
 formatter.result({
-  "duration": 117400,
+  "duration": 7950604700,
   "status": "passed"
 });
 formatter.scenario({
   "line": 20,
-  "name": "Não deve alugar filme sem estoque",
+  "name": "Não deve inserir uma conta com nome já existente",
   "description": "",
-  "id": "locadora-com-esquema-de-cenário-e-data-table;não-deve-alugar-filme-sem-estoque",
+  "id": "cadastro-de-contas;não-deve-inserir-uma-conta-com-nome-já-existente",
   "type": "scenario",
   "keyword": "Cenário"
 });
 formatter.step({
   "line": 21,
-  "name": "filme com estoque de 0 unidades",
-  "keyword": "Dado "
+  "name": "adiciono a conta \"Conta de Teste\"",
+  "keyword": "E "
 });
 formatter.step({
   "line": 22,
-  "name": "alugar este",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 23,
-  "name": "não será possivel pela falta de estoque",
+  "name": "sou notificado que existe uma conta com esse nome",
   "keyword": "Então "
 });
-formatter.step({
-  "line": 24,
-  "name": "estoque do filme será 0 unidade",
-  "keyword": "E "
-});
 formatter.match({
   "arguments": [
     {
-      "val": "0",
-      "offset": 21
+      "val": "Conta de Teste",
+      "offset": 18
     }
   ],
-  "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
+  "location": "InserirContasStepsCenarioDeclarativo.adicionoAConta(String)"
 });
 formatter.result({
-  "duration": 105300,
+  "duration": 708416200,
   "status": "passed"
 });
 formatter.match({
-  "location": "EsqCenarioDataTable.alugar()"
+  "location": "InserirContasStepsCenarioDeclarativo.souNotificadoQueExisteUmaContaComEsseNome()"
 });
 formatter.result({
-  "duration": 89200,
+  "duration": 73446600,
   "status": "passed"
 });
-formatter.match({
-  "location": "EsqCenarioDataTable.nãoSeráPossivelPorFaltaDeEstoque()"
-});
-formatter.result({
-  "duration": 47600,
+formatter.after({
+  "duration": 341319200,
   "status": "passed"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 22
-    }
-  ],
-  "location": "EsqCenarioDataTable.oEstoqueDoFilmeSeráDeUnidade(int)"
+formatter.after({
+  "duration": 4514045400,
+  "status": "passed"
 });
-formatter.result({
-  "duration": 93900,
+formatter.after({
+  "duration": 883473100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1052388000,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 27,
-  "name": "Deve dar condições conforme tipo de aluguel",
+  "line": 24,
+  "name": "Deve validar regras cadastro contas",
   "description": "",
-  "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas",
   "type": "scenario_outline",
-  "keyword": "Esquema do Cenário",
-  "tags": [
-    {
-      "line": 26,
-      "name": "@esqCenario"
-    }
-  ]
+  "keyword": "Esquema do Cenário"
 });
 formatter.step({
-  "line": 28,
-  "name": "filme com estoque de 2 unidades",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 29,
-  "name": "o preço do aluguel seja R$ \u003cpreco\u003e",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 30,
-  "name": "o tipo do aluguel seja \u003ctipo\u003e",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 31,
-  "name": "alugar este",
+  "line": 25,
+  "name": "adiciono a conta \"\u003cconta\u003e\"",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 32,
-  "name": "preço do aluguel será R$ \u003cvalor\u003e",
+  "line": 26,
+  "name": "recebo mensagem \"\u003cmensagem\u003e\"",
   "keyword": "Então "
 });
-formatter.step({
-  "line": 33,
-  "name": "data de entrega será em \u003cqtdDias\u003e dias",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 34,
-  "name": "pontuação recebida será de \u003cpontuacao\u003e pontos",
-  "keyword": "E "
-});
 formatter.examples({
-  "line": 35,
+  "line": 28,
   "name": "",
   "description": "",
-  "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;",
   "rows": [
     {
       "cells": [
-        "preco",
-        "tipo",
-        "valor",
-        "qtdDias",
-        "pontuacao"
+        "conta",
+        "mensagem"
       ],
-      "line": 36,
-      "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;;1"
+      "line": 29,
+      "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;1"
     },
     {
       "cells": [
-        "4",
-        "extendido",
-        "8",
-        "3",
-        "2"
+        "Conta de Teste Esquema",
+        "Conta adicionada com sucesso!"
       ],
-      "line": 37,
-      "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;;2"
+      "line": 30,
+      "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;2"
     },
     {
       "cells": [
-        "4",
-        "comum",
-        "4",
-        "1",
-        "1"
+        "",
+        "Informe o nome da conta"
       ],
-      "line": 38,
-      "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;;3"
+      "line": 31,
+      "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;3"
     },
     {
       "cells": [
-        "5",
-        "semanal",
-        "15",
-        "7",
-        "3"
+        "Conta mesmo nome",
+        "Já existe uma conta com esse nome!"
       ],
-      "line": 39,
-      "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;;4"
+      "line": 32,
+      "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;4"
     }
   ],
   "keyword": "Exemplos"
 });
-formatter.scenario({
-  "line": 37,
-  "name": "Deve dar condições conforme tipo de aluguel",
+formatter.background({
+  "line": 9,
+  "name": "",
   "description": "",
-  "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;;2",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 10,
+  "name": "que desejo adicionar uma conta",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "InserirContasStepsCenarioDeclarativo.queDesejoAdicionarUmaConta()"
+});
+formatter.result({
+  "duration": 8199306700,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 30,
+  "name": "Deve validar regras cadastro contas",
+  "description": "",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;2",
   "type": "scenario",
   "keyword": "Esquema do Cenário",
   "tags": [
     {
       "line": 3,
-      "name": "@locEsqCenarioDataTable"
+      "name": "@inserir_conta_declarativo"
     },
     {
-      "line": 26,
-      "name": "@esqCenario"
+      "line": 3,
+      "name": "@funcionais"
     }
   ]
 });
 formatter.step({
-  "line": 28,
-  "name": "filme com estoque de 2 unidades",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 29,
-  "name": "o preço do aluguel seja R$ 4",
+  "line": 25,
+  "name": "adiciono a conta \"Conta de Teste Esquema\"",
   "matchedColumns": [
     0
   ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 30,
-  "name": "o tipo do aluguel seja extendido",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 31,
-  "name": "alugar este",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 32,
-  "name": "preço do aluguel será R$ 8",
+  "line": 26,
+  "name": "recebo mensagem \"Conta adicionada com sucesso!\"",
   "matchedColumns": [
-    2
+    1
   ],
   "keyword": "Então "
 });
+formatter.match({
+  "arguments": [
+    {
+      "val": "Conta de Teste Esquema",
+      "offset": 18
+    }
+  ],
+  "location": "InserirContasStepsCenarioDeclarativo.adicionoAConta(String)"
+});
+formatter.result({
+  "duration": 1159708700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Conta adicionada com sucesso!",
+      "offset": 17
+    }
+  ],
+  "location": "InserirContasStepsCenarioDeclarativo.receboMensagem(String)"
+});
+formatter.result({
+  "duration": 101488500,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 387059400,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 5001447000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 885722300,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 839724200,
+  "status": "passed"
+});
+formatter.background({
+  "line": 9,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
 formatter.step({
-  "line": 33,
-  "name": "data de entrega será em 3 dias",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 34,
-  "name": "pontuação recebida será de 2 pontos",
-  "matchedColumns": [
-    4
-  ],
-  "keyword": "E "
+  "line": 10,
+  "name": "que desejo adicionar uma conta",
+  "keyword": "Dado "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 21
-    }
-  ],
-  "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
+  "location": "InserirContasStepsCenarioDeclarativo.queDesejoAdicionarUmaConta()"
 });
 formatter.result({
-  "duration": 147900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "4",
-      "offset": 27
-    }
-  ],
-  "location": "EsqCenarioDataTable.queOPreçoDoAluguelSejaDeR$(int)"
-});
-formatter.result({
-  "duration": 112500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "extendido",
-      "offset": 23
-    }
-  ],
-  "location": "EsqCenarioDataTable.queOTipoDoAluguelSejaExtendido(String)"
-});
-formatter.result({
-  "duration": 157300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "EsqCenarioDataTable.alugar()"
-});
-formatter.result({
-  "duration": 100100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "8",
-      "offset": 25
-    }
-  ],
-  "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
-});
-formatter.result({
-  "duration": 97100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "3",
-      "offset": 24
-    }
-  ],
-  "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
-});
-formatter.result({
-  "duration": 671900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 27
-    }
-  ],
-  "location": "EsqCenarioDataTable.aPontuaçãoRecebidaSeráDePontos(int)"
-});
-formatter.result({
-  "duration": 107000,
+  "duration": 7559091200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 38,
-  "name": "Deve dar condições conforme tipo de aluguel",
+  "line": 31,
+  "name": "Deve validar regras cadastro contas",
   "description": "",
-  "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;;3",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;3",
   "type": "scenario",
   "keyword": "Esquema do Cenário",
   "tags": [
     {
       "line": 3,
-      "name": "@locEsqCenarioDataTable"
+      "name": "@inserir_conta_declarativo"
     },
     {
-      "line": 26,
-      "name": "@esqCenario"
+      "line": 3,
+      "name": "@funcionais"
     }
   ]
 });
 formatter.step({
-  "line": 28,
-  "name": "filme com estoque de 2 unidades",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 29,
-  "name": "o preço do aluguel seja R$ 4",
+  "line": 25,
+  "name": "adiciono a conta \"\"",
   "matchedColumns": [
     0
   ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 30,
-  "name": "o tipo do aluguel seja comum",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 31,
-  "name": "alugar este",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 32,
-  "name": "preço do aluguel será R$ 4",
+  "line": 26,
+  "name": "recebo mensagem \"Informe o nome da conta\"",
   "matchedColumns": [
-    2
+    1
   ],
   "keyword": "Então "
 });
+formatter.match({
+  "arguments": [
+    {
+      "val": "",
+      "offset": 18
+    }
+  ],
+  "location": "InserirContasStepsCenarioDeclarativo.adicionoAConta(String)"
+});
+formatter.result({
+  "duration": 795118500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Informe o nome da conta",
+      "offset": 17
+    }
+  ],
+  "location": "InserirContasStepsCenarioDeclarativo.receboMensagem(String)"
+});
+formatter.result({
+  "duration": 96768500,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 381572000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 4694183300,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 918910500,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 840560100,
+  "status": "passed"
+});
+formatter.background({
+  "line": 9,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
 formatter.step({
-  "line": 33,
-  "name": "data de entrega será em 1 dias",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 34,
-  "name": "pontuação recebida será de 1 pontos",
-  "matchedColumns": [
-    4
-  ],
-  "keyword": "E "
+  "line": 10,
+  "name": "que desejo adicionar uma conta",
+  "keyword": "Dado "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 21
-    }
-  ],
-  "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
+  "location": "InserirContasStepsCenarioDeclarativo.queDesejoAdicionarUmaConta()"
 });
 formatter.result({
-  "duration": 146300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "4",
-      "offset": 27
-    }
-  ],
-  "location": "EsqCenarioDataTable.queOPreçoDoAluguelSejaDeR$(int)"
-});
-formatter.result({
-  "duration": 100900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "comum",
-      "offset": 23
-    }
-  ],
-  "location": "EsqCenarioDataTable.queOTipoDoAluguelSejaExtendido(String)"
-});
-formatter.result({
-  "duration": 79400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "EsqCenarioDataTable.alugar()"
-});
-formatter.result({
-  "duration": 132000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "4",
-      "offset": 25
-    }
-  ],
-  "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
-});
-formatter.result({
-  "duration": 256600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 24
-    }
-  ],
-  "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
-});
-formatter.result({
-  "duration": 776100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 27
-    }
-  ],
-  "location": "EsqCenarioDataTable.aPontuaçãoRecebidaSeráDePontos(int)"
-});
-formatter.result({
-  "duration": 330400,
+  "duration": 7532150900,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 39,
-  "name": "Deve dar condições conforme tipo de aluguel",
+  "line": 32,
+  "name": "Deve validar regras cadastro contas",
   "description": "",
-  "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;;4",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;4",
   "type": "scenario",
   "keyword": "Esquema do Cenário",
   "tags": [
     {
       "line": 3,
-      "name": "@locEsqCenarioDataTable"
+      "name": "@inserir_conta_declarativo"
     },
     {
-      "line": 26,
-      "name": "@esqCenario"
+      "line": 3,
+      "name": "@funcionais"
     }
   ]
 });
 formatter.step({
-  "line": 28,
-  "name": "filme com estoque de 2 unidades",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 29,
-  "name": "o preço do aluguel seja R$ 5",
+  "line": 25,
+  "name": "adiciono a conta \"Conta mesmo nome\"",
   "matchedColumns": [
     0
   ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 30,
-  "name": "o tipo do aluguel seja semanal",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 31,
-  "name": "alugar este",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 32,
-  "name": "preço do aluguel será R$ 15",
+  "line": 26,
+  "name": "recebo mensagem \"Já existe uma conta com esse nome!\"",
   "matchedColumns": [
-    2
+    1
   ],
   "keyword": "Então "
 });
-formatter.step({
-  "line": 33,
-  "name": "data de entrega será em 7 dias",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "E "
-});
-formatter.step({
-  "line": 34,
-  "name": "pontuação recebida será de 3 pontos",
-  "matchedColumns": [
-    4
-  ],
-  "keyword": "E "
-});
 formatter.match({
   "arguments": [
     {
-      "val": "2",
-      "offset": 21
+      "val": "Conta mesmo nome",
+      "offset": 18
     }
   ],
-  "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
+  "location": "InserirContasStepsCenarioDeclarativo.adicionoAConta(String)"
 });
 formatter.result({
-  "duration": 220300,
+  "duration": 811681100,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "5",
-      "offset": 27
+      "val": "Já existe uma conta com esse nome!",
+      "offset": 17
     }
   ],
-  "location": "EsqCenarioDataTable.queOPreçoDoAluguelSejaDeR$(int)"
+  "location": "InserirContasStepsCenarioDeclarativo.receboMensagem(String)"
 });
 formatter.result({
-  "duration": 178700,
+  "duration": 81862700,
   "status": "passed"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "semanal",
-      "offset": 23
-    }
-  ],
-  "location": "EsqCenarioDataTable.queOTipoDoAluguelSejaExtendido(String)"
-});
-formatter.result({
-  "duration": 79700,
+formatter.after({
+  "duration": 403045800,
   "status": "passed"
 });
-formatter.match({
-  "location": "EsqCenarioDataTable.alugar()"
-});
-formatter.result({
-  "duration": 97700,
+formatter.after({
+  "duration": 5092428200,
   "status": "passed"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "15",
-      "offset": 25
-    }
-  ],
-  "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
-});
-formatter.result({
-  "duration": 100800,
+formatter.after({
+  "duration": 980725800,
   "status": "passed"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "7",
-      "offset": 24
-    }
-  ],
-  "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
-});
-formatter.result({
-  "duration": 465800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "3",
-      "offset": 27
-    }
-  ],
-  "location": "EsqCenarioDataTable.aPontuaçãoRecebidaSeráDePontos(int)"
-});
-formatter.result({
-  "duration": 90700,
+formatter.after({
+  "duration": 856546400,
   "status": "passed"
 });
 });

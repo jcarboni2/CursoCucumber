@@ -1,6 +1,6 @@
 # language: pt
 
-@cucumberTransf
+@unitarios @cucumber_transf
 Funcionalidade: Aprender cucumber usando transform
   Como um aluno
   Eu quero aprender a utilizar o cucumber usando transform

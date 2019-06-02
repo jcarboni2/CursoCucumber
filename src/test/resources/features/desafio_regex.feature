@@ -1,6 +1,6 @@
 #language: pt
 
-@desafioFunc
+@unitarios @cucumber_regex
 Funcionalidade: Desafio regex
 	Como um aluno
 	Preciso realizar as atividades de regex

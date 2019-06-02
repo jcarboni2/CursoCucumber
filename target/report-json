@@ -9,667 +9,679 @@
     "line": 4,
     "elements": [
       {
-        "line": 10,
-        "name": "Deve alugar um filme com sucesso",
+        "line": 9,
+        "name": "",
         "description": "",
-        "id": "locadora-com-esquema-de-cenário-e-data-table;deve-alugar-um-filme-com-sucesso",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 9243476600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que desejo adicionar uma conta",
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.queDesejoAdicionarUmaConta()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Deve inserir uma conta com sucesso",
+        "description": "",
+        "id": "cadastro-de-contas;deve-inserir-uma-conta-com-sucesso",
+        "after": [
+          {
+            "result": {
+              "duration": 436810600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4938697000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 965054100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.fecharNavegador()"
+            }
+          },
+          {
+            "result": {
+              "duration": 848524100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharNavegador()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Cenário",
         "steps": [
           {
             "result": {
-              "duration": 197422900,
+              "duration": 1085901900,
               "status": "passed"
             },
-            "line": 11,
-            "name": "filme",
-            "match": {
-              "location": "EsqCenarioDataTable.filme(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "estoque",
-                  "2"
-                ],
-                "line": 12
-              },
-              {
-                "cells": [
-                  "preco",
-                  "3"
-                ],
-                "line": 13
-              },
-              {
-                "cells": [
-                  "tipo",
-                  "comum"
-                ],
-                "line": 14
-              }
-            ],
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 1795200,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "alugar este",
-            "match": {
-              "location": "EsqCenarioDataTable.alugar()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 4590200,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "preço do aluguel será R$ 3",
+            "line": 13,
+            "name": "adiciono a conta \"Conta de Teste\"",
             "match": {
               "arguments": [
                 {
-                  "val": "3",
-                  "offset": 25
+                  "val": "Conta de Teste",
+                  "offset": 18
                 }
               ],
-              "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
+              "location": "InserirContasStepsCenarioDeclarativo.adicionoAConta(String)"
             },
-            "keyword": "Então "
+            "keyword": "E "
           },
           {
             "result": {
-              "duration": 1120900,
+              "duration": 106712200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "a conta inserida com sucesso",
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.aContaInseridaComSucesso()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 7949888400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que desejo adicionar uma conta",
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.queDesejoAdicionarUmaConta()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Não deve inserir uma conta sem nome",
+        "description": "",
+        "id": "cadastro-de-contas;não-deve-inserir-uma-conta-sem-nome",
+        "after": [
+          {
+            "result": {
+              "duration": 418224600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4669751000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 889400300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.fecharNavegador()"
+            }
+          },
+          {
+            "result": {
+              "duration": 853504300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharNavegador()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 613885900,
               "status": "passed"
             },
             "line": 17,
-            "name": "data de entrega será em 1 dia",
+            "name": "adiciono a conta \"\"",
             "match": {
               "arguments": [
                 {
-                  "val": "1",
-                  "offset": 24
+                  "val": "",
+                  "offset": 18
                 }
               ],
-              "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
+              "location": "InserirContasStepsCenarioDeclarativo.adicionoAConta(String)"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 117400,
+              "duration": 114600300,
               "status": "passed"
             },
             "line": 18,
-            "name": "estoque do filme será 1 unidade",
+            "name": "sou notificado que nome da conta é obrigatório",
             "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 22
-                }
-              ],
-              "location": "EsqCenarioDataTable.oEstoqueDoFilmeSeráDeUnidade(int)"
+              "location": "InserirContasStepsCenarioDeclarativo.souNotificadoQueNomeDaContaÉObrigatório()"
             },
-            "keyword": "E "
+            "keyword": "Então "
           }
-        ],
-        "tags": [
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
           {
-            "line": 9,
-            "name": "@dataTable"
+            "result": {
+              "duration": 7950604700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que desejo adicionar uma conta",
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.queDesejoAdicionarUmaConta()"
+            },
+            "keyword": "Dado "
           }
         ]
       },
       {
         "line": 20,
-        "name": "Não deve alugar filme sem estoque",
+        "name": "Não deve inserir uma conta com nome já existente",
         "description": "",
-        "id": "locadora-com-esquema-de-cenário-e-data-table;não-deve-alugar-filme-sem-estoque",
+        "id": "cadastro-de-contas;não-deve-inserir-uma-conta-com-nome-já-existente",
+        "after": [
+          {
+            "result": {
+              "duration": 341319200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4514045400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 883473100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.fecharNavegador()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1052388000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharNavegador()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Cenário",
         "steps": [
           {
             "result": {
-              "duration": 105300,
+              "duration": 708416200,
               "status": "passed"
             },
             "line": 21,
-            "name": "filme com estoque de 0 unidades",
+            "name": "adiciono a conta \"Conta de Teste\"",
             "match": {
               "arguments": [
                 {
-                  "val": "0",
-                  "offset": 21
+                  "val": "Conta de Teste",
+                  "offset": 18
                 }
               ],
-              "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
+              "location": "InserirContasStepsCenarioDeclarativo.adicionoAConta(String)"
             },
-            "keyword": "Dado "
+            "keyword": "E "
           },
           {
             "result": {
-              "duration": 89200,
+              "duration": 73446600,
               "status": "passed"
             },
             "line": 22,
-            "name": "alugar este",
+            "name": "sou notificado que existe uma conta com esse nome",
             "match": {
-              "location": "EsqCenarioDataTable.alugar()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 47600,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "não será possivel pela falta de estoque",
-            "match": {
-              "location": "EsqCenarioDataTable.nãoSeráPossivelPorFaltaDeEstoque()"
+              "location": "InserirContasStepsCenarioDeclarativo.souNotificadoQueExisteUmaContaComEsseNome()"
             },
             "keyword": "Então "
-          },
-          {
-            "result": {
-              "duration": 93900,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "estoque do filme será 0 unidade",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0",
-                  "offset": 22
-                }
-              ],
-              "location": "EsqCenarioDataTable.oEstoqueDoFilmeSeráDeUnidade(int)"
-            },
-            "keyword": "E "
           }
         ]
       },
       {
-        "line": 37,
-        "name": "Deve dar condições conforme tipo de aluguel",
+        "line": 9,
+        "name": "",
         "description": "",
-        "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;;2",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 8199306700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que desejo adicionar uma conta",
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.queDesejoAdicionarUmaConta()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Deve validar regras cadastro contas",
+        "description": "",
+        "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 387059400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 5001447000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 885722300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.fecharNavegador()"
+            }
+          },
+          {
+            "result": {
+              "duration": 839724200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharNavegador()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 147900,
+              "duration": 1159708700,
               "status": "passed"
             },
-            "line": 28,
-            "name": "filme com estoque de 2 unidades",
+            "line": 25,
+            "name": "adiciono a conta \"Conta de Teste Esquema\"",
             "match": {
               "arguments": [
                 {
-                  "val": "2",
-                  "offset": 21
+                  "val": "Conta de Teste Esquema",
+                  "offset": 18
                 }
               ],
-              "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 112500,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "o preço do aluguel seja R$ 4",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 27
-                }
-              ],
-              "location": "EsqCenarioDataTable.queOPreçoDoAluguelSejaDeR$(int)"
+              "location": "InserirContasStepsCenarioDeclarativo.adicionoAConta(String)"
             },
             "matchedColumns": [
               0
             ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 157300,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "o tipo do aluguel seja extendido",
-            "match": {
-              "arguments": [
-                {
-                  "val": "extendido",
-                  "offset": 23
-                }
-              ],
-              "location": "EsqCenarioDataTable.queOTipoDoAluguelSejaExtendido(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 100100,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "alugar este",
-            "match": {
-              "location": "EsqCenarioDataTable.alugar()"
-            },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 97100,
+              "duration": 101488500,
               "status": "passed"
             },
-            "line": 32,
-            "name": "preço do aluguel será R$ 8",
+            "line": 26,
+            "name": "recebo mensagem \"Conta adicionada com sucesso!\"",
             "match": {
               "arguments": [
                 {
-                  "val": "8",
-                  "offset": 25
+                  "val": "Conta adicionada com sucesso!",
+                  "offset": 17
                 }
               ],
-              "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
+              "location": "InserirContasStepsCenarioDeclarativo.receboMensagem(String)"
             },
             "matchedColumns": [
-              2
+              1
             ],
             "keyword": "Então "
-          },
-          {
-            "result": {
-              "duration": 671900,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "data de entrega será em 3 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 24
-                }
-              ],
-              "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 107000,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "pontuação recebida será de 2 pontos",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 27
-                }
-              ],
-              "location": "EsqCenarioDataTable.aPontuaçãoRecebidaSeráDePontos(int)"
-            },
-            "matchedColumns": [
-              4
-            ],
-            "keyword": "E "
           }
         ],
         "tags": [
           {
             "line": 3,
-            "name": "@locEsqCenarioDataTable"
+            "name": "@inserir_conta_declarativo"
           },
           {
-            "line": 26,
-            "name": "@esqCenario"
+            "line": 3,
+            "name": "@funcionais"
           }
         ]
       },
       {
-        "line": 38,
-        "name": "Deve dar condições conforme tipo de aluguel",
+        "line": 9,
+        "name": "",
         "description": "",
-        "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;;3",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 7559091200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que desejo adicionar uma conta",
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.queDesejoAdicionarUmaConta()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Deve validar regras cadastro contas",
+        "description": "",
+        "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 381572000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4694183300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 918910500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.fecharNavegador()"
+            }
+          },
+          {
+            "result": {
+              "duration": 840560100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharNavegador()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 146300,
+              "duration": 795118500,
               "status": "passed"
             },
-            "line": 28,
-            "name": "filme com estoque de 2 unidades",
+            "line": 25,
+            "name": "adiciono a conta \"\"",
             "match": {
               "arguments": [
                 {
-                  "val": "2",
-                  "offset": 21
+                  "val": "",
+                  "offset": 18
                 }
               ],
-              "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 100900,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "o preço do aluguel seja R$ 4",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 27
-                }
-              ],
-              "location": "EsqCenarioDataTable.queOPreçoDoAluguelSejaDeR$(int)"
+              "location": "InserirContasStepsCenarioDeclarativo.adicionoAConta(String)"
             },
             "matchedColumns": [
               0
             ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 79400,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "o tipo do aluguel seja comum",
-            "match": {
-              "arguments": [
-                {
-                  "val": "comum",
-                  "offset": 23
-                }
-              ],
-              "location": "EsqCenarioDataTable.queOTipoDoAluguelSejaExtendido(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 132000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "alugar este",
-            "match": {
-              "location": "EsqCenarioDataTable.alugar()"
-            },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 256600,
+              "duration": 96768500,
               "status": "passed"
             },
-            "line": 32,
-            "name": "preço do aluguel será R$ 4",
+            "line": 26,
+            "name": "recebo mensagem \"Informe o nome da conta\"",
             "match": {
               "arguments": [
                 {
-                  "val": "4",
-                  "offset": 25
+                  "val": "Informe o nome da conta",
+                  "offset": 17
                 }
               ],
-              "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
+              "location": "InserirContasStepsCenarioDeclarativo.receboMensagem(String)"
             },
             "matchedColumns": [
-              2
+              1
             ],
             "keyword": "Então "
-          },
-          {
-            "result": {
-              "duration": 776100,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "data de entrega será em 1 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 24
-                }
-              ],
-              "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 330400,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "pontuação recebida será de 1 pontos",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 27
-                }
-              ],
-              "location": "EsqCenarioDataTable.aPontuaçãoRecebidaSeráDePontos(int)"
-            },
-            "matchedColumns": [
-              4
-            ],
-            "keyword": "E "
           }
         ],
         "tags": [
           {
             "line": 3,
-            "name": "@locEsqCenarioDataTable"
+            "name": "@inserir_conta_declarativo"
           },
           {
-            "line": 26,
-            "name": "@esqCenario"
+            "line": 3,
+            "name": "@funcionais"
           }
         ]
       },
       {
-        "line": 39,
-        "name": "Deve dar condições conforme tipo de aluguel",
+        "line": 9,
+        "name": "",
         "description": "",
-        "id": "locadora-com-esquema-de-cenário-e-data-table;deve-dar-condições-conforme-tipo-de-aluguel;;4",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 7532150900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que desejo adicionar uma conta",
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.queDesejoAdicionarUmaConta()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Deve validar regras cadastro contas",
+        "description": "",
+        "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 403045800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 5092428200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 980725800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasStepsCenarioDeclarativo.fecharNavegador()"
+            }
+          },
+          {
+            "result": {
+              "duration": 856546400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InserirContasSteps.fecharNavegador()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 220300,
+              "duration": 811681100,
               "status": "passed"
             },
-            "line": 28,
-            "name": "filme com estoque de 2 unidades",
+            "line": 25,
+            "name": "adiciono a conta \"Conta mesmo nome\"",
             "match": {
               "arguments": [
                 {
-                  "val": "2",
-                  "offset": 21
+                  "val": "Conta mesmo nome",
+                  "offset": 18
                 }
               ],
-              "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 178700,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "o preço do aluguel seja R$ 5",
-            "match": {
-              "arguments": [
-                {
-                  "val": "5",
-                  "offset": 27
-                }
-              ],
-              "location": "EsqCenarioDataTable.queOPreçoDoAluguelSejaDeR$(int)"
+              "location": "InserirContasStepsCenarioDeclarativo.adicionoAConta(String)"
             },
             "matchedColumns": [
               0
             ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 79700,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "o tipo do aluguel seja semanal",
-            "match": {
-              "arguments": [
-                {
-                  "val": "semanal",
-                  "offset": 23
-                }
-              ],
-              "location": "EsqCenarioDataTable.queOTipoDoAluguelSejaExtendido(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 97700,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "alugar este",
-            "match": {
-              "location": "EsqCenarioDataTable.alugar()"
-            },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 100800,
+              "duration": 81862700,
               "status": "passed"
             },
-            "line": 32,
-            "name": "preço do aluguel será R$ 15",
+            "line": 26,
+            "name": "recebo mensagem \"Já existe uma conta com esse nome!\"",
             "match": {
               "arguments": [
                 {
-                  "val": "15",
-                  "offset": 25
+                  "val": "Já existe uma conta com esse nome!",
+                  "offset": 17
                 }
               ],
-              "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
+              "location": "InserirContasStepsCenarioDeclarativo.receboMensagem(String)"
             },
             "matchedColumns": [
-              2
+              1
             ],
             "keyword": "Então "
-          },
-          {
-            "result": {
-              "duration": 465800,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "data de entrega será em 7 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "7",
-                  "offset": 24
-                }
-              ],
-              "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 90700,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "pontuação recebida será de 3 pontos",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 27
-                }
-              ],
-              "location": "EsqCenarioDataTable.aPontuaçãoRecebidaSeráDePontos(int)"
-            },
-            "matchedColumns": [
-              4
-            ],
-            "keyword": "E "
           }
         ],
         "tags": [
           {
             "line": 3,
-            "name": "@locEsqCenarioDataTable"
+            "name": "@inserir_conta_declarativo"
           },
           {
-            "line": 26,
-            "name": "@esqCenario"
+            "line": 3,
+            "name": "@funcionais"
           }
         ]
       }
     ],
-    "name": "Locadora com esquema de cenário e data table",
-    "description": "Como um usuário\r\nEu quero cadastrar aluguéis de filmes\r\nPara controlar preços e datas de entrega",
-    "id": "locadora-com-esquema-de-cenário-e-data-table",
+    "name": "Cadastro de contas",
+    "description": "Como um usuário \nGostaria de cadastrar contas\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
+    "id": "cadastro-de-contas",
     "keyword": "Funcionalidade",
-    "uri": "esq_cenario_data_table.feature",
+    "uri": "inserir_conta_cenario_declarativo.feature",
     "tags": [
       {
         "line": 3,
-        "name": "@locEsqCenarioDataTable"
+        "name": "@funcionais"
+      },
+      {
+        "line": 3,
+        "name": "@inserir_conta_declarativo"
       }
     ]
   }

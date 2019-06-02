@@ -1,6 +1,6 @@
 #language: pt
 
-@locadora
+@unitarios @locadora
 Funcionalidade: Locadora
 	Como um usuário
 	Eu quero cadastrar aluguéis de filmes
