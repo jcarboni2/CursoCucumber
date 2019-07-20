@@ -43,7 +43,7 @@ public class LocadoraSteps {
 	}
 
 	@Então("^o preço do aluguel será R\\$ (\\d+)$")
-	public void oPreçoDoaluguelSeráR$(int arg1) throws Throwable {
+	public void oPreçoDoAluguelSeráR$(int arg1) throws Throwable {
 		Assert.assertEquals(arg1, nota.getPreco());
 	}
 
@@ -52,7 +52,7 @@ public class LocadoraSteps {
 		Assert.assertEquals(arg1, filme.getEstoque());
 	}
 	
-	//Método adicional do segundo cenário//
+	//M�todo adicional do segundo cenário//
 	
 	@Então("^não será possivel por falta de estoque$")
 	public void nãoSeráPossivelPorFaltaDeEstoque() throws Throwable {

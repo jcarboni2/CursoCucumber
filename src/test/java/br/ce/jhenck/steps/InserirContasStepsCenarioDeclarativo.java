@@ -60,7 +60,7 @@ public class InserirContasStepsCenarioDeclarativo extends Web {
 		Assert.assertEquals(msg, texto);
 	}
 	
-	@After(order=1, value= {"@inserir_conta_declarativo"})
+	@After(order=1, value= {"@funcionais"})
 	public void screenshot(Scenario cenario) {
 		File file = ((TakesScreenshot)navegador).getScreenshotAs(OutputType.FILE);
 		try {
@@ -70,7 +70,7 @@ public class InserirContasStepsCenarioDeclarativo extends Web {
 		}
 	}
 	
-	@After(order=0, value= {"@inserir_conta_declarativo"})
+	@After(order=0, value= {"@funcionais"})
 	public void fecharNavegador() {
 		navegador.quit();
 	}

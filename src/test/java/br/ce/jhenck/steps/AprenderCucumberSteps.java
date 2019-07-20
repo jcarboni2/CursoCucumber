@@ -31,7 +31,7 @@ public class AprenderCucumberSteps {
 
 	}
 
-	// ---------------IMPLEMENTAÇÕES DE LÓGICA DIRETAMENTE NO CUCUMBER---------------//
+	// ---------------IMPLEMENTA��ES DE L�GICA DIRETAMENTE NO CUCUMBER---------------//
 
 	// -----CONTADOR-----//
 
