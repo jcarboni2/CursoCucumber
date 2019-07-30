@@ -52,7 +52,7 @@ public class LocadoraSteps {
 		Assert.assertEquals(arg1, filme.getEstoque());
 	}
 	
-	//M�todo adicional do segundo cenário//
+	//Método adicional do segundo cenário//
 	
 	@Então("^não será possivel por falta de estoque$")
 	public void nãoSeráPossivelPorFaltaDeEstoque() throws Throwable {

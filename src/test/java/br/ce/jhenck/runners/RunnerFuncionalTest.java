@@ -14,7 +14,7 @@ import support.Web;
 @CucumberOptions(
 		features = "src/test/resources/features/",
 		glue = "br.ce.jhenck.steps",
-		tags = {"@inserir_conta_declarativo"},
+		tags = {"@funcionais"},
 		plugin = {"pretty", "html:target/report-html", "json:target/report-json"},
 		monochrome = true, 
 		snippets = SnippetType.CAMELCASE, 

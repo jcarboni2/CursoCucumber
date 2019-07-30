@@ -22,7 +22,7 @@ public class InserirContasStepsCenarioDeclarativo extends Web {
 	
 	@Dado("^que desejo adicionar uma conta$")
 	public void queDesejoAdicionarUmaConta() throws Throwable {
-		navegador.get("https://srbarriga.herokuapp.com");
+		navegador.get("http://seubarriga.wcaquino.me");
 		navegador.findElement(By.id("email")).sendKeys("jch@jch.com");
 		navegador.findElement(By.id("senha")).sendKeys("1234");
 		navegador.findElement(By.tagName("button")).click();

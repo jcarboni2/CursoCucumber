@@ -23,7 +23,7 @@ public class InserirContasSteps extends Web {
 
 	@Dado("^que estou acessando a aplicação$")
 	public void queEstouAcessandoAAplicação() throws Throwable {
-		navegador.get("https://srbarriga.herokuapp.com");
+		navegador.get("http://seubarriga.wcaquino.me");
 	}
 
 	@Quando("^informo o usuário \"([^\"]*)\"$")
@@ -44,7 +44,8 @@ public class InserirContasSteps extends Web {
 	@Então("^visualizo a página inicial$")
 	public void visualizoAPáginaInicial() throws Throwable {
 		String texto = navegador.findElement(By.xpath("//div[@class='alert alert-success']")).getText();
-		Assert.assertEquals("Bem vindo, Johnny!", texto);
+		//Alterar o nome do usuário para o cadastrado no site http://seubarriga.wcaquino.me/contas
+		Assert.assertEquals("Bem vindo, nomeUsuário!", texto);
 	}
 
 	@Quando("^seleciono Contas$")
