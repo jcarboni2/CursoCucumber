@@ -7,7 +7,8 @@ Funcionalidade: Cadastro de contas
 
   Contexto: 
     Dado que estou acessando a aplicação
-    Quando informo o usuário "jch@jch.com"
+    #Alterar email e senha para os cadastrados no site https://seubarriga.wcaquino.me/contas
+    Quando informo o usuário "user@user.com"
     E a senha "1234"
     E seleciono entrar
     Então visualizo a página inicial

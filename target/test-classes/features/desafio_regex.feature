@@ -19,6 +19,7 @@ Funcionalidade: Desafio regex
     Dado que o valor da passagem é R$ 1120,23
     Dado que o nome do passageiro é "Cicrano de Oliveira"
     Dado que o telefone do passageiro é 9888-8888
+    
 #	@ignore
 #	Cenário: Deve negar todos os steps "Dado" dos cenários anteriores
     #Dado que o ticket é CD123
