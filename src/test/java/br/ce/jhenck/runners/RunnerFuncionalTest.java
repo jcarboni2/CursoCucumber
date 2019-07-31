@@ -26,8 +26,9 @@ public class RunnerFuncionalTest{
 	@BeforeClass
 	public static void reset() {
 		WebDriver navegador = Web.abrirNavegador();
-		navegador.get("https://srbarriga.herokuapp.com");
-		navegador.findElement(By.id("email")).sendKeys("jch@jch.com");
+		navegador.get("https://barrigarest.wcaquino.me");
+		//Entrar com o email e senha cadastrado no site https://barrigarest.wcaquino.me
+		navegador.findElement(By.id("email")).sendKeys("user@user.com");
 		navegador.findElement(By.id("senha")).sendKeys("1234");
 		navegador.findElement(By.tagName("button")).click();
 		navegador.findElement(By.linkText("reset")).click();

@@ -18,38 +18,29 @@
         "steps": [
           {
             "result": {
-              "duration": 313595800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 9,
             "name": "que criei o arquivo corretamente",
-            "match": {
-              "location": "AprenderCucumberSteps.queCrieiOArquivoCorretamente()"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 43600,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 10,
             "name": "executá-lo",
-            "match": {
-              "location": "AprenderCucumberSteps.executáLo()"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 24200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 11,
             "name": "a especificação deve finalizar com sucesso",
-            "match": {
-              "location": "AprenderCucumberSteps.aEspecificaçãoDeveFinalizarComSucesso()"
-            },
+            "match": {},
             "keyword": "Então "
           }
         ]
@@ -64,56 +55,29 @@
         "steps": [
           {
             "result": {
-              "duration": 33186800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 14,
             "name": "que o valor do contador é 15",
-            "match": {
-              "arguments": [
-                {
-                  "val": "15",
-                  "offset": 26
-                }
-              ],
-              "location": "AprenderCucumberSteps.queOValorDoContadorÉ(int)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 155400,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 15,
             "name": "eu incrementar em 3",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 18
-                }
-              ],
-              "location": "AprenderCucumberSteps.euIncrementarEm(int)"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 8528900,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 16,
             "name": "o valor do contador será 18",
-            "match": {
-              "arguments": [
-                {
-                  "val": "18",
-                  "offset": 25
-                }
-              ],
-              "location": "AprenderCucumberSteps.oValorDoContadorSerá(int)"
-            },
+            "match": {},
             "keyword": "Então "
           }
         ]
@@ -128,56 +92,29 @@
         "steps": [
           {
             "result": {
-              "duration": 203700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 19,
             "name": "que o valor do contador é 123",
-            "match": {
-              "arguments": [
-                {
-                  "val": "123",
-                  "offset": 26
-                }
-              ],
-              "location": "AprenderCucumberSteps.queOValorDoContadorÉ(int)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 93000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 20,
             "name": "eu incrementar em 35",
-            "match": {
-              "arguments": [
-                {
-                  "val": "35",
-                  "offset": 18
-                }
-              ],
-              "location": "AprenderCucumberSteps.euIncrementarEm(int)"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 83500,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 21,
             "name": "o valor do contador será 158",
-            "match": {
-              "arguments": [
-                {
-                  "val": "158",
-                  "offset": 25
-                }
-              ],
-              "location": "AprenderCucumberSteps.oValorDoContadorSerá(int)"
-            },
+            "match": {},
             "keyword": "Então "
           }
         ]
@@ -192,68 +129,29 @@
         "steps": [
           {
             "result": {
-              "duration": 425900,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 24,
             "name": "que o prazo é dia 05/04/2018",
-            "match": {
-              "arguments": [
-                {
-                  "val": "05",
-                  "offset": 18
-                },
-                {
-                  "val": "04",
-                  "offset": 21
-                },
-                {
-                  "val": "2018",
-                  "offset": 24
-                }
-              ],
-              "location": "AprenderCucumberSteps.queOPrazoÉ(int,int,int)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 2051000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 25,
             "name": "a entrega atrasar em 2 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 21
-                },
-                {
-                  "val": "dias",
-                  "offset": 23
-                }
-              ],
-              "location": "AprenderCucumberSteps.aEntregaAtrasarEmDias(int,String)"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 732600,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 26,
             "name": "a entrega será efetuada em 07/04/2018",
-            "match": {
-              "arguments": [
-                {
-                  "val": "07/04/2018",
-                  "offset": 27
-                }
-              ],
-              "location": "AprenderCucumberSteps.aEntregaSeráEfetuadaEm(String)"
-            },
+            "match": {},
             "keyword": "Então "
           }
         ]
@@ -268,68 +166,29 @@
         "steps": [
           {
             "result": {
-              "duration": 281000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 29,
             "name": "que o prazo é dia 05/04/2018",
-            "match": {
-              "arguments": [
-                {
-                  "val": "05",
-                  "offset": 18
-                },
-                {
-                  "val": "04",
-                  "offset": 21
-                },
-                {
-                  "val": "2018",
-                  "offset": 24
-                }
-              ],
-              "location": "AprenderCucumberSteps.queOPrazoÉ(int,int,int)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 199900,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 30,
             "name": "a entrega atrasar em 2 meses",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 21
-                },
-                {
-                  "val": "meses",
-                  "offset": 23
-                }
-              ],
-              "location": "AprenderCucumberSteps.aEntregaAtrasarEmDias(int,String)"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 223700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 31,
             "name": "a entrega será efetuada em 05/06/2018",
-            "match": {
-              "arguments": [
-                {
-                  "val": "05/06/2018",
-                  "offset": 27
-                }
-              ],
-              "location": "AprenderCucumberSteps.aEntregaSeráEfetuadaEm(String)"
-            },
+            "match": {},
             "keyword": "Então "
           }
         ]
@@ -370,60 +229,29 @@
         "steps": [
           {
             "result": {
-              "duration": 1372800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 9,
             "name": "que a entrega é 05/04/2018",
-            "match": {
-              "arguments": [
-                {
-                  "val": "05/04/2018",
-                  "offset": 16
-                }
-              ],
-              "location": "AprenderCucumberTransformSteps.queAEntregaÉ(Date)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 260200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 10,
             "name": "a entrega atrasar 2 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 18
-                },
-                {
-                  "val": "dias",
-                  "offset": 20
-                }
-              ],
-              "location": "AprenderCucumberTransformSteps.aEntregaAtrasarDias(int,String)"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 272400,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 11,
             "name": "a entrega será efetuada 07/04/2018",
-            "match": {
-              "arguments": [
-                {
-                  "val": "07/04/2018",
-                  "offset": 24
-                }
-              ],
-              "location": "AprenderCucumberTransformSteps.aEntregaSeráEfetuada(String)"
-            },
+            "match": {},
             "keyword": "Então "
           }
         ]
@@ -438,60 +266,29 @@
         "steps": [
           {
             "result": {
-              "duration": 840000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 14,
             "name": "que a entrega é 05/04/2018",
-            "match": {
-              "arguments": [
-                {
-                  "val": "05/04/2018",
-                  "offset": 16
-                }
-              ],
-              "location": "AprenderCucumberTransformSteps.queAEntregaÉ(Date)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 372300,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 15,
             "name": "a entrega atrasar 2 meses",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 18
-                },
-                {
-                  "val": "meses",
-                  "offset": 20
-                }
-              ],
-              "location": "AprenderCucumberTransformSteps.aEntregaAtrasarDias(int,String)"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 445900,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 16,
             "name": "a entrega será efetuada 05/06/2018",
-            "match": {
-              "arguments": [
-                {
-                  "val": "05/06/2018",
-                  "offset": 24
-                }
-              ],
-              "location": "AprenderCucumberTransformSteps.aEntregaSeráEfetuada(String)"
-            },
+            "match": {},
             "keyword": "Então "
           }
         ]
@@ -506,99 +303,56 @@
         "steps": [
           {
             "result": {
-              "duration": 104900,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 19,
             "name": "que o ticket AF345",
-            "match": {
-              "arguments": [
-                {},
-                {
-                  "val": "AF345",
-                  "offset": 13
-                }
-              ],
-              "location": "AprenderCucumberTransformSteps.queOTicketAF(String,String)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 3161100,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 20,
             "name": "que o valor da passagem R$ 230,45",
-            "match": {
-              "arguments": [
-                {
-                  "val": "230,45",
-                  "offset": 27
-                }
-              ],
-              "location": "AprenderCucumberTransformSteps.queOValorDaPassagemR$(Double)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 73400,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 21,
             "name": "que o nome do passageiro \"Fulano da Silva\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Fulano da Silva",
-                  "offset": 26
-                }
-              ],
-              "location": "AprenderCucumberTransformSteps.queONomeDoPassageiro(String)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 79100,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 22,
             "name": "que o telefone do passageiro 9999-9999",
-            "match": {
-              "arguments": [
-                {
-                  "val": "9999-9999",
-                  "offset": 29
-                }
-              ],
-              "location": "AprenderCucumberTransformSteps.queOTelefoneDoPassageiro(String)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 31400,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 23,
             "name": "criar o step",
-            "match": {
-              "location": "AprenderCucumberTransformSteps.criarOStep()"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 30100,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 24,
             "name": "o teste funciona",
-            "match": {
-              "location": "AprenderCucumberTransformSteps.oTesteFunciona()"
-            },
+            "match": {},
             "keyword": "Então "
           }
         ]
@@ -639,103 +393,56 @@
         "steps": [
           {
             "result": {
-              "duration": 143800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 9,
             "name": "que o ticket é AF345",
-            "match": {
-              "arguments": [
-                {},
-                {
-                  "val": "AF345",
-                  "offset": 15
-                }
-              ],
-              "location": "DesafioRegexSteps.queOTicketÉAF(String,String)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 608400,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 10,
             "name": "que o valor da passagem é R$ 230,45",
-            "match": {
-              "arguments": [
-                {
-                  "val": "230",
-                  "offset": 29
-                },
-                {
-                  "val": "45",
-                  "offset": 33
-                }
-              ],
-              "location": "DesafioRegexSteps.queOValorDaPassagemÉR$(int,int)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 73300,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 11,
             "name": "que o nome do passageiro é \"Fulano da Silva\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Fulano da Silva",
-                  "offset": 28
-                }
-              ],
-              "location": "DesafioRegexSteps.queONomeDoPassageiroÉ(String)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 668400,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 12,
             "name": "que o telefone do passageiro é 9999-9999",
-            "match": {
-              "arguments": [
-                {
-                  "val": "9999-9999",
-                  "offset": 31
-                }
-              ],
-              "location": "DesafioRegexSteps.queOTelefoneDoPassageiroÉ(String)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 27900,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 13,
             "name": "criar os steps",
-            "match": {
-              "location": "DesafioRegexSteps.criarOsSteps()"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 24600,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 14,
             "name": "o teste vai funcionar",
-            "match": {
-              "location": "DesafioRegexSteps.oTesteVaiFuncionar()"
-            },
+            "match": {},
             "keyword": "Então "
           }
         ]
@@ -750,101 +457,47 @@
         "steps": [
           {
             "result": {
-              "duration": 119000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 17,
             "name": "que o ticket é AB167",
-            "match": {
-              "arguments": [
-                {},
-                {
-                  "val": "AB167",
-                  "offset": 15
-                }
-              ],
-              "location": "DesafioRegexSteps.queOTicketÉAF(String,String)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 81200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 18,
             "name": "que o ticket especial é AB167",
-            "match": {
-              "arguments": [
-                {
-                  "val": " especial",
-                  "offset": 12
-                },
-                {
-                  "val": "AB167",
-                  "offset": 24
-                }
-              ],
-              "location": "DesafioRegexSteps.queOTicketÉAF(String,String)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 145300,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 19,
             "name": "que o valor da passagem é R$ 1120,23",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1120",
-                  "offset": 29
-                },
-                {
-                  "val": "23",
-                  "offset": 34
-                }
-              ],
-              "location": "DesafioRegexSteps.queOValorDaPassagemÉR$(int,int)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 228700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 20,
             "name": "que o nome do passageiro é \"Cicrano de Oliveira\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Cicrano de Oliveira",
-                  "offset": 28
-                }
-              ],
-              "location": "DesafioRegexSteps.queONomeDoPassageiroÉ(String)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 134300,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 21,
             "name": "que o telefone do passageiro é 9888-8888",
-            "match": {
-              "arguments": [
-                {
-                  "val": "9888-8888",
-                  "offset": 31
-                }
-              ],
-              "location": "DesafioRegexSteps.queOTelefoneDoPassageiroÉ(String)"
-            },
+            "match": {},
             "keyword": "Dado "
           }
         ]
@@ -885,14 +538,11 @@
         "steps": [
           {
             "result": {
-              "duration": 4444500,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 10,
             "name": "filme",
-            "match": {
-              "location": "EsqCenarioDataTable.filme(DataTable)"
-            },
+            "match": {},
             "rows": [
               {
                 "cells": [
@@ -920,68 +570,38 @@
           },
           {
             "result": {
-              "duration": 1379400,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 14,
             "name": "alugar este",
-            "match": {
-              "location": "EsqCenarioDataTable.alugar()"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 121000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 15,
             "name": "preço do aluguel será R$ 3",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 25
-                }
-              ],
-              "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
-            },
+            "match": {},
             "keyword": "Então "
           },
           {
             "result": {
-              "duration": 437000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 16,
             "name": "data de entrega será em 1 dia",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 24
-                }
-              ],
-              "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 112400,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 17,
             "name": "estoque do filme será 1 unidade",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 22
-                }
-              ],
-              "location": "EsqCenarioDataTable.oEstoqueDoFilmeSeráDeUnidade(int)"
-            },
+            "match": {},
             "keyword": "E "
           }
         ],
@@ -1002,62 +622,38 @@
         "steps": [
           {
             "result": {
-              "duration": 204800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 20,
             "name": "filme com estoque de 0 unidades",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0",
-                  "offset": 21
-                }
-              ],
-              "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 76500,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 21,
             "name": "alugar este",
-            "match": {
-              "location": "EsqCenarioDataTable.alugar()"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 36900,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 22,
             "name": "não será possivel pela falta de estoque",
-            "match": {
-              "location": "EsqCenarioDataTable.nãoSeráPossivelPorFaltaDeEstoque()"
-            },
+            "match": {},
             "keyword": "Então "
           },
           {
             "result": {
-              "duration": 87000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 23,
             "name": "estoque do filme será 0 unidade",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0",
-                  "offset": 22
-                }
-              ],
-              "location": "EsqCenarioDataTable.oEstoqueDoFilmeSeráDeUnidade(int)"
-            },
+            "match": {},
             "keyword": "E "
           }
         ]
@@ -1072,38 +668,20 @@
         "steps": [
           {
             "result": {
-              "duration": 124600,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 27,
             "name": "filme com estoque de 2 unidades",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 21
-                }
-              ],
-              "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 104800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 28,
             "name": "o preço do aluguel seja R$ 4",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 27
-                }
-              ],
-              "location": "EsqCenarioDataTable.queOPreçoDoAluguelSejaDeR$(int)"
-            },
+            "match": {},
             "matchedColumns": [
               0
             ],
@@ -1111,20 +689,11 @@
           },
           {
             "result": {
-              "duration": 78100,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 29,
             "name": "o tipo do aluguel seja extendido",
-            "match": {
-              "arguments": [
-                {
-                  "val": "extendido",
-                  "offset": 23
-                }
-              ],
-              "location": "EsqCenarioDataTable.queOTipoDoAluguelSejaExtendido(String)"
-            },
+            "match": {},
             "matchedColumns": [
               1
             ],
@@ -1132,32 +701,20 @@
           },
           {
             "result": {
-              "duration": 102600,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 30,
             "name": "alugar este",
-            "match": {
-              "location": "EsqCenarioDataTable.alugar()"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 1435200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 31,
             "name": "preço do aluguel será R$ 8",
-            "match": {
-              "arguments": [
-                {
-                  "val": "8",
-                  "offset": 25
-                }
-              ],
-              "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
-            },
+            "match": {},
             "matchedColumns": [
               2
             ],
@@ -1165,20 +722,11 @@
           },
           {
             "result": {
-              "duration": 310400,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 32,
             "name": "data de entrega será em 3 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 24
-                }
-              ],
-              "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
-            },
+            "match": {},
             "matchedColumns": [
               3
             ],
@@ -1186,20 +734,11 @@
           },
           {
             "result": {
-              "duration": 96800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 33,
             "name": "pontuação recebida será de 2 pontos",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 27
-                }
-              ],
-              "location": "EsqCenarioDataTable.aPontuaçãoRecebidaSeráDePontos(int)"
-            },
+            "match": {},
             "matchedColumns": [
               4
             ],
@@ -1231,38 +770,20 @@
         "steps": [
           {
             "result": {
-              "duration": 121800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 27,
             "name": "filme com estoque de 2 unidades",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 21
-                }
-              ],
-              "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 101900,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 28,
             "name": "o preço do aluguel seja R$ 4",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 27
-                }
-              ],
-              "location": "EsqCenarioDataTable.queOPreçoDoAluguelSejaDeR$(int)"
-            },
+            "match": {},
             "matchedColumns": [
               0
             ],
@@ -1270,20 +791,11 @@
           },
           {
             "result": {
-              "duration": 61000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 29,
             "name": "o tipo do aluguel seja comum",
-            "match": {
-              "arguments": [
-                {
-                  "val": "comum",
-                  "offset": 23
-                }
-              ],
-              "location": "EsqCenarioDataTable.queOTipoDoAluguelSejaExtendido(String)"
-            },
+            "match": {},
             "matchedColumns": [
               1
             ],
@@ -1291,32 +803,20 @@
           },
           {
             "result": {
-              "duration": 97100,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 30,
             "name": "alugar este",
-            "match": {
-              "location": "EsqCenarioDataTable.alugar()"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 84200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 31,
             "name": "preço do aluguel será R$ 4",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 25
-                }
-              ],
-              "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
-            },
+            "match": {},
             "matchedColumns": [
               2
             ],
@@ -1324,20 +824,11 @@
           },
           {
             "result": {
-              "duration": 364700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 32,
             "name": "data de entrega será em 1 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 24
-                }
-              ],
-              "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
-            },
+            "match": {},
             "matchedColumns": [
               3
             ],
@@ -1345,20 +836,11 @@
           },
           {
             "result": {
-              "duration": 101300,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 33,
             "name": "pontuação recebida será de 1 pontos",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 27
-                }
-              ],
-              "location": "EsqCenarioDataTable.aPontuaçãoRecebidaSeráDePontos(int)"
-            },
+            "match": {},
             "matchedColumns": [
               4
             ],
@@ -1390,38 +872,20 @@
         "steps": [
           {
             "result": {
-              "duration": 164900,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 27,
             "name": "filme com estoque de 2 unidades",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 21
-                }
-              ],
-              "location": "EsqCenarioDataTable.umFilmeComEstoqueDeUnidades(int)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 89800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 28,
             "name": "o preço do aluguel seja R$ 5",
-            "match": {
-              "arguments": [
-                {
-                  "val": "5",
-                  "offset": 27
-                }
-              ],
-              "location": "EsqCenarioDataTable.queOPreçoDoAluguelSejaDeR$(int)"
-            },
+            "match": {},
             "matchedColumns": [
               0
             ],
@@ -1429,20 +893,11 @@
           },
           {
             "result": {
-              "duration": 71200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 29,
             "name": "o tipo do aluguel seja semanal",
-            "match": {
-              "arguments": [
-                {
-                  "val": "semanal",
-                  "offset": 23
-                }
-              ],
-              "location": "EsqCenarioDataTable.queOTipoDoAluguelSejaExtendido(String)"
-            },
+            "match": {},
             "matchedColumns": [
               1
             ],
@@ -1450,32 +905,20 @@
           },
           {
             "result": {
-              "duration": 97800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 30,
             "name": "alugar este",
-            "match": {
-              "location": "EsqCenarioDataTable.alugar()"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 97900,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 31,
             "name": "preço do aluguel será R$ 15",
-            "match": {
-              "arguments": [
-                {
-                  "val": "15",
-                  "offset": 25
-                }
-              ],
-              "location": "EsqCenarioDataTable.oPreçoDoaluguelSeráR$(int)"
-            },
+            "match": {},
             "matchedColumns": [
               2
             ],
@@ -1483,20 +926,11 @@
           },
           {
             "result": {
-              "duration": 412400,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 32,
             "name": "data de entrega será em 7 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "7",
-                  "offset": 24
-                }
-              ],
-              "location": "EsqCenarioDataTable.aDataDeEntregaSeráEmDias(int)"
-            },
+            "match": {},
             "matchedColumns": [
               3
             ],
@@ -1504,20 +938,11 @@
           },
           {
             "result": {
-              "duration": 106700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 33,
             "name": "pontuação recebida será de 3 pontos",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 27
-                }
-              ],
-              "location": "EsqCenarioDataTable.aPontuaçãoRecebidaSeráDePontos(int)"
-            },
+            "match": {},
             "matchedColumns": [
               4
             ],
@@ -1575,104 +1000,56 @@
         "steps": [
           {
             "result": {
-              "duration": 181900,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 9,
             "name": "um filme com estoque de 2 unidades",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 24
-                }
-              ],
-              "location": "LocadoraSteps.umFilmeComEstoqueDeUnidades(int)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 1081500,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 10,
             "name": "que o preço do aluguel seja R$ 3",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 31
-                }
-              ],
-              "location": "LocadoraSteps.queOPreçoDoAluguelSejaDeR$(int)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 202200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 11,
             "name": "alugar",
-            "match": {
-              "location": "LocadoraSteps.alugar()"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 114000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 12,
             "name": "o preço do aluguel será R$ 3",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 27
-                }
-              ],
-              "location": "LocadoraSteps.oPreçoDoAluguelSeráR$(int)"
-            },
+            "match": {},
             "keyword": "Então "
           },
           {
             "result": {
-              "duration": 410700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 13,
             "name": "a data de entrega será em 1 dia",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 26
-                }
-              ],
-              "location": "LocadoraSteps.aDataDeEntregaSeráEmDias(int)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 143700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 14,
             "name": "o estoque do filme será 1 unidade",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 24
-                }
-              ],
-              "location": "LocadoraSteps.oEstoqueDoFilmeSeráDeUnidade(int)"
-            },
+            "match": {},
             "keyword": "E "
           }
         ]
@@ -1687,62 +1064,38 @@
         "steps": [
           {
             "result": {
-              "duration": 120700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 17,
             "name": "um filme com estoque de 0 unidades",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0",
-                  "offset": 24
-                }
-              ],
-              "location": "LocadoraSteps.umFilmeComEstoqueDeUnidades(int)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 62500,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 18,
             "name": "alugar",
-            "match": {
-              "location": "LocadoraSteps.alugar()"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 29100,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 19,
             "name": "não será possivel por falta de estoque",
-            "match": {
-              "location": "LocadoraSteps.nãoSeráPossivelPorFaltaDeEstoque()"
-            },
+            "match": {},
             "keyword": "Então "
           },
           {
             "result": {
-              "duration": 59500,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 20,
             "name": "o estoque do filme será 0 unidade",
-            "match": {
-              "arguments": [
-                {
-                  "val": "0",
-                  "offset": 24
-                }
-              ],
-              "location": "LocadoraSteps.oEstoqueDoFilmeSeráDeUnidade(int)"
-            },
+            "match": {},
             "keyword": "E "
           }
         ]
@@ -1757,122 +1110,65 @@
         "steps": [
           {
             "result": {
-              "duration": 208500,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 23,
             "name": "um filme com estoque de 2 unidades",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 24
-                }
-              ],
-              "location": "LocadoraSteps.umFilmeComEstoqueDeUnidades(int)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 64800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 24,
             "name": "que o preço do aluguel seja R$ 4",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 31
-                }
-              ],
-              "location": "LocadoraSteps.queOPreçoDoAluguelSejaDeR$(int)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 229100,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 25,
             "name": "que o tipo do aluguel seja extendido",
-            "match": {
-              "arguments": [
-                {
-                  "val": "extendido",
-                  "offset": 27
-                }
-              ],
-              "location": "LocadoraSteps.queOTipoDoAluguelSejaExtendido(String)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 180800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 26,
             "name": "alugar",
-            "match": {
-              "location": "LocadoraSteps.alugar()"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 74200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 27,
             "name": "o preço do aluguel será R$ 8",
-            "match": {
-              "arguments": [
-                {
-                  "val": "8",
-                  "offset": 27
-                }
-              ],
-              "location": "LocadoraSteps.oPreçoDoAluguelSeráR$(int)"
-            },
+            "match": {},
             "keyword": "Então "
           },
           {
             "result": {
-              "duration": 343100,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 28,
             "name": "a data de entrega será em 3 dias",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 26
-                }
-              ],
-              "location": "LocadoraSteps.aDataDeEntregaSeráEmDias(int)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 68200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 29,
             "name": "a pontuação recebida será de 2 pontos",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 29
-                }
-              ],
-              "location": "LocadoraSteps.aPontuaçãoRecebidaSeráDePontos(int)"
-            },
+            "match": {},
             "keyword": "E "
           }
         ]
@@ -1887,122 +1183,65 @@
         "steps": [
           {
             "result": {
-              "duration": 99200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 32,
             "name": "um filme com estoque de 2 unidades",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 24
-                }
-              ],
-              "location": "LocadoraSteps.umFilmeComEstoqueDeUnidades(int)"
-            },
+            "match": {},
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 496700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 33,
             "name": "que o preço do aluguel seja R$ 4",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 31
-                }
-              ],
-              "location": "LocadoraSteps.queOPreçoDoAluguelSejaDeR$(int)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 45700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 34,
             "name": "que o tipo do aluguel seja comum",
-            "match": {
-              "arguments": [
-                {
-                  "val": "comum",
-                  "offset": 27
-                }
-              ],
-              "location": "LocadoraSteps.queOTipoDoAluguelSejaExtendido(String)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 821200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 35,
             "name": "alugar",
-            "match": {
-              "location": "LocadoraSteps.alugar()"
-            },
+            "match": {},
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 1445200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 36,
             "name": "o preço do aluguel será R$ 4",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4",
-                  "offset": 27
-                }
-              ],
-              "location": "LocadoraSteps.oPreçoDoAluguelSeráR$(int)"
-            },
+            "match": {},
             "keyword": "Então "
           },
           {
             "result": {
-              "duration": 299300,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 37,
             "name": "a data de entrega será em 1 dia",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 26
-                }
-              ],
-              "location": "LocadoraSteps.aDataDeEntregaSeráEmDias(int)"
-            },
+            "match": {},
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 124600,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 38,
             "name": "a pontuação recebida será de 1 ponto",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 29
-                }
-              ],
-              "location": "LocadoraSteps.aPontuaçãoRecebidaSeráDePontos(int)"
-            },
+            "match": {},
             "keyword": "E "
           }
         ]
