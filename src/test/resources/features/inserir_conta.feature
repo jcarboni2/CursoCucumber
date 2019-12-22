@@ -7,8 +7,8 @@ Funcionalidade: Cadastro de contas
 
   Contexto: 
     Dado que estou acessando a aplicação
-    #Alterar email e senha para os cadastrados no site https://seubarriga.wcaquino.me/contas
-    Quando informo o usuário "user@user.com"
+    #Alterar email e senha para os cadastrados no site https://srbarriga.herokuapp.com/contas
+    Quando informo o usuário "jch@jch.com"
     E a senha "1234"
     E seleciono entrar
     Então visualizo a página inicial

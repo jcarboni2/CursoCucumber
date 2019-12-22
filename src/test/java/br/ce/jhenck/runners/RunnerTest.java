@@ -2,14 +2,14 @@ package br.ce.jhenck.runners;
 
 import org.junit.runner.RunWith;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.SnippetType;
-import cucumber.api.junit.Cucumber;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "src/test/resources/features/",
-		glue = "br.ce.jhenck.steps",
+		glue = {"br.ce.jhenck.steps", "br.ce.jhenck.config"},
 		tags = {"@unitarios"},
 		plugin = {"pretty", "html:target/report-html", "json:target/report-json"},
 		monochrome = true, 

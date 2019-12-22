@@ -10,10 +10,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Então;
+import io.cucumber.core.api.Scenario;
+import io.cucumber.java.After;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Então;
 import support.Web;
 
 public class InserirContasStepsCenarioDeclarativo extends Web {
@@ -22,9 +22,9 @@ public class InserirContasStepsCenarioDeclarativo extends Web {
 	
 	@Dado("^que desejo adicionar uma conta$")
 	public void queDesejoAdicionarUmaConta() throws Throwable {
-		navegador.get("https://seubarriga.wcaquino.me");
+		navegador.get("https://srbarriga.herokuapp.com");
 		//Alterar o usuário e senha para o cadastrado no site https://seubarriga.wcaquino.me/contas
-		navegador.findElement(By.id("email")).sendKeys("user@user.com");
+		navegador.findElement(By.id("email")).sendKeys("jch@jch.com");
 		navegador.findElement(By.id("senha")).sendKeys("1234");
 		navegador.findElement(By.tagName("button")).click();
 		navegador.findElement(By.linkText("Contas")).click();
@@ -61,7 +61,7 @@ public class InserirContasStepsCenarioDeclarativo extends Web {
 		Assert.assertEquals(msg, texto);
 	}
 	
-	@After(order=1, value= {"@funcionais"})
+	@After(order=1, value= "@funcionais")
 	public void screenshot(Scenario cenario) {
 		File file = ((TakesScreenshot)navegador).getScreenshotAs(OutputType.FILE);
 		try {
@@ -71,7 +71,7 @@ public class InserirContasStepsCenarioDeclarativo extends Web {
 		}
 	}
 	
-	@After(order=0, value= {"@funcionais"})
+	@After(order=0, value= "@funcionais")
 	public void fecharNavegador() {
 		navegador.quit();
 	}

@@ -12,10 +12,10 @@ import br.ce.jhenck.entidades.NotaAluguel;
 import br.ce.jhenck.entidades.TipoAluguel;
 import br.ce.jhenck.servicos.AluguelService;
 import br.ce.jhenck.utils.DateUtils;
-import cucumber.api.DataTable;
-import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Então;
-import cucumber.api.java.pt.Quando;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Então;
+import io.cucumber.java.pt.Quando;
 
 public class EsqCenarioDataTable {
 	
