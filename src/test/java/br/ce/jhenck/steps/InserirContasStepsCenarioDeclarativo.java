@@ -2,6 +2,8 @@ package br.ce.jhenck.steps;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
@@ -24,8 +26,8 @@ public class InserirContasStepsCenarioDeclarativo extends Web {
 	public void queDesejoAdicionarUmaConta() throws Throwable {
 		navegador.get("https://srbarriga.herokuapp.com");
 		//Alterar o usuário e senha para o cadastrado no site https://seubarriga.wcaquino.me/contas
-		navegador.findElement(By.id("email")).sendKeys("jch@jch.com");
-		navegador.findElement(By.id("senha")).sendKeys("1234");
+		navegador.findElement(By.id("email")).sendKeys("user@user.com");
+		navegador.findElement(By.id("senha")).sendKeys("senha");
 		navegador.findElement(By.tagName("button")).click();
 		navegador.findElement(By.linkText("Contas")).click();
 		navegador.findElement(By.linkText("Adicionar")).click();
@@ -63,9 +65,11 @@ public class InserirContasStepsCenarioDeclarativo extends Web {
 	
 	@After(order=1, value= "@funcionais")
 	public void screenshot(Scenario cenario) {
-		File file = ((TakesScreenshot)navegador).getScreenshotAs(OutputType.FILE);
+		File image = ((TakesScreenshot)navegador).getScreenshotAs(OutputType.FILE);
+		String timestamp = new SimpleDateFormat("yyyy-MM-dd__HH-mm-ss").format(new Date());		
 		try {
-			FileUtils.copyFile(file, new File("target/screenshots/"+cenario.getId()+".jpeg"));
+			new File("/target/screenshots").mkdir();
+			FileUtils.copyFile(image, new File("target/screenshots/"+cenario.getName()+"_"+timestamp+".png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

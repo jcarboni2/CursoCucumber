@@ -2,6 +2,8 @@ package br.ce.jhenck.steps;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
@@ -45,7 +47,7 @@ public class InserirContasSteps extends Web {
 	public void visualizoAPáginaInicial() throws Throwable {
 		String texto = navegador.findElement(By.xpath("//div[@class='alert alert-success']")).getText();
 		//Alterar o nome do usuário para o cadastrado no site https://seubarriga.wcaquino.me/contas
-		Assert.assertEquals("Bem vindo, Johnny!", texto);
+		Assert.assertEquals("Bem vindo, NomeDoUsuário!", texto);
 	}
 
 	@Quando("^seleciono Contas$")
@@ -94,9 +96,11 @@ public class InserirContasSteps extends Web {
 	
 	@After(order=1, value= "@funcionais")
 	public void screenshot(Scenario cenario) {
-		File file = ((TakesScreenshot)navegador).getScreenshotAs(OutputType.FILE);
+		File image = ((TakesScreenshot)navegador).getScreenshotAs(OutputType.FILE);
+		String timestamp = new SimpleDateFormat("yyyy-MM-dd__HH-mm-ss").format(new Date());		
 		try {
-			FileUtils.copyFile(file, new File("target/screenshots/"+cenario.getId()+".jpeg"));
+			new File("/target/screenshots").mkdir();
+			FileUtils.copyFile(image, new File("target/screenshots/"+cenario.getName()+"_"+timestamp+".png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
