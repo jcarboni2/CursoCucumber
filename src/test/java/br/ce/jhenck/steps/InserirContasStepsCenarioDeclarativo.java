@@ -26,8 +26,8 @@ public class InserirContasStepsCenarioDeclarativo extends Web {
 	public void queDesejoAdicionarUmaConta() throws Throwable {
 		navegador.get("https://srbarriga.herokuapp.com");
 		//Alterar o usuário e senha para o cadastrado no site https://seubarriga.wcaquino.me/contas
-		navegador.findElement(By.id("email")).sendKeys("user@user.com");
-		navegador.findElement(By.id("senha")).sendKeys("senha");
+		navegador.findElement(By.id("email")).sendKeys("jch@jch.com");
+		navegador.findElement(By.id("senha")).sendKeys("1234");
 		navegador.findElement(By.tagName("button")).click();
 		navegador.findElement(By.linkText("Contas")).click();
 		navegador.findElement(By.linkText("Adicionar")).click();
