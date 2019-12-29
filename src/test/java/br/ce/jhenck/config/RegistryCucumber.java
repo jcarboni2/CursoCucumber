@@ -14,26 +14,20 @@ public class RegistryCucumber implements TypeRegistryConfigurer {
 
 	@Override
 	public Locale locale() {
-		// TODO Auto-generated method stub
 		return Locale.ENGLISH;
 	}
 
 	@Override
 	public void configureTypeRegistry(TypeRegistry registry) {
-		registry.defineParameterType(
-				new ParameterType<>("data", ".*", Date.class, (String s) -> {
-					DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-					try {
-						Date retorno = format.parse(s);
-						return retorno;
-					} catch (ParseException e) {
-						e.printStackTrace();
-						return null;
-					}
-				})
-				
-				);
-
+		registry.defineParameterType(new ParameterType<>("data", ".*", Date.class, (String s) -> {
+			DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+			try {
+				Date retorno = format.parse(s);
+				return retorno;
+			} catch (ParseException e) {
+				e.printStackTrace();
+				return null;
+			}
+		}));
 	}
-
 }
